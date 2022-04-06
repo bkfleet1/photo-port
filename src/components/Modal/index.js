@@ -9,7 +9,7 @@ const Modal = ({ onClose, currentPhoto }) => {
         <h3 className="modalTitle">{name} </h3>
         <img
           src={require(`../../assets/large/${category}/${index}.jpg`).default}
-          alt="current category"
+          alt={`${category}`}
         />
         <p>{description}</p>
         <button type="button" onClick={onClose}>
